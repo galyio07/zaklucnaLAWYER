@@ -91,7 +91,7 @@ def lawyer_chat():
 
     lawyer_type = request.args.get('type', 'General')
 
-    valid_types = ['Korporativni', 'Criminal', 'Family', 'IP', 'General']
+    valid_types = ['Korporativni', 'Kriminalni', 'Družinski', 'Intelektualni',]
     if lawyer_type not in valid_types:
         return redirect(url_for('lawyer_selection'))
     
