@@ -240,26 +240,7 @@
                     let response = '';
                     
                     
-                    if (message.toLowerCase().includes('help') || message.toLowerCase().includes('advice')) {
-                        switch(lawyerType) {
-                            case 'Corporate':
-                                response = "I specialize in business law matters including company formation, contracts, and compliance. Could you tell me more about your specific business concern?";
-                                break;
-                            case 'Criminal':
-                                response = "I handle criminal defense matters. Please share some details about your situation, and remember that our conversation is confidential.";
-                                break;
-                            case 'Family':
-                                response = "As your family lawyer, I can assist with divorce, custody, or other domestic matters. What specific family law issue are you facing?";
-                                break;
-                            case 'IP':
-                                response = "I focus on intellectual property protection including patents, trademarks, and copyrights. What IP matter do you need assistance with?";
-                                break;
-                            default:
-                                response = "I'd be happy to help. Could you provide more details about your legal concern?";
-                        }
-                    } else {
-                        response = "Thank you for sharing that information. Could you provide more details so I can better understand your situation and offer appropriate legal guidance?";
-                    }
+                   
                     
                     addMessage(response, 'lawyer');
                 }, 1000);
