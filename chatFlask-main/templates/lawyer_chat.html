@@ -221,7 +221,7 @@
         
         window.onload = function() {
             setTimeout(() => {
-                addMessage(`Hello{% if uporabnisko_ime %}, {{ uporabnisko_ime }}{% endif %}! I'm ${lawyerName}, your ${lawyerType} lawyer. How can I help you today?`, 'lawyer');
+                addMessage(`Pozdravljen{% if uporabnisko_ime %}, {{ uporabnisko_ime }}{% endif %}! Jaz se ${lawyerName}, tvoj ${lawyerType} odvetnik. Kako ti lahko pomagam?`, 'lawyer');
             }, 500);
         };
         
@@ -236,14 +236,7 @@
                 input.value = '';
                 
                 //preprost tekst ki ga poslje na zacetku
-                setTimeout(() => {
-                    let response = '';
-                    
-                    
-                   
-                    
-                    addMessage(response, 'lawyer');
-                }, 1000);
+                
             }
         }
         
