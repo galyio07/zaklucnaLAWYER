@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GT - Lawyer Selection</title>
+    <title>GT - Odvetniki</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -20,7 +20,7 @@
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Baskerville';
             background: var(--primary-gradient);
             min-height: 100vh;
             display: flex;
@@ -100,7 +100,7 @@
 </head>
 <body>
     <div class="services-container">
-        <h2 class="section-title">GT Lawyers</h2>
+        <h2 class="section-title">GT Odvetniki</h2>
         
         {% if uporabnisko_ime %}
         <p class="welcome-text">Welcome, {{ uporabnisko_ime }}!</p>
@@ -111,7 +111,7 @@
             <div class="service-card" onclick="selectLawyer('Korporativni')">
                 <h4>Korporativni Odvetnik</h4>
             </div>
-            <div class="service-card" onclick="selectLawyer('Krimanlni')">
+            <div class="service-card" onclick="selectLawyer('Kazenska prava')">
                 <h4>Kriminalni Odvetnik</h4>
             </div>
             <div class="service-card" onclick="selectLawyer('Družinski')">
